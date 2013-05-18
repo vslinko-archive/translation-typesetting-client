@@ -27,6 +27,7 @@
   , "symfio-contrib-bower": "~0.1"
   , "symfio-contrib-mongoose": "~0.1"
   , "symfio-contrib-fixtures": "~0.1"
+  , "symfio-contrib-nconf": "~0.1"
   , "cruder": "~0.1"
   , "nconf": "~0.6"
   , "superagent": "~0.14"

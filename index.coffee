@@ -10,7 +10,7 @@ container.set "components", [
   "angular-sanitize#~1.0"
 ]
 
-loader.use require "./plugins/nconf"
+loader.use require "symfio-contrib-nconf"
 loader.use require "symfio-contrib-express"
 loader.use require "symfio-contrib-express-logger"
 loader.use require "symfio-contrib-mongoose"
