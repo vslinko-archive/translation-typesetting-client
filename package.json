@@ -1,0 +1,39 @@
+{
+  "name": "translation-typesetting-client"
+, "version": "0.1.0"
+, "description": "Translation Typesetting Client"
+, "homepage": "https://github.com/vyacheslav/translation-typesetting-client"
+, "bugs": {
+    "url": "https://github.com/vyacheslav/translation-typesetting-client/issues"
+  }
+, "author": {
+    "name": "Vyacheslav Slinko"
+  , "email": "vyacheslav.slinko@gmail.com"
+  }
+, "main": "index"
+, "repository": {
+    "type": "git"
+  , "url": "git://github.com/vyacheslav/translation-typesetting-client.git"
+  }
+, "scripts": {
+    "start": "coffee index.coffee"
+  , "test": "grunt"
+  }
+, "dependencies": {
+    "symfio": "~1.0"
+  , "symfio-contrib-express": "~0.1"
+  , "symfio-contrib-express-logger": "~0.1"
+  , "symfio-contrib-mongoose": "~0.1"
+  , "cruder": "~0.1"
+  }
+, "devDependencies": {
+    "symfio-suite": "~1.0"
+  , "grunt": "~0.4"
+  , "grunt-coffeelint": "~0.0"
+  }
+, "engines": {
+    "node": "~0.8"
+  , "npm": "~1.2"
+  , "coffee-script": "~1.6"
+  }
+}
