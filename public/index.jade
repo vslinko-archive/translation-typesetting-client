@@ -18,8 +18,7 @@ html
         p.logo(ng-show="lang == 'en'") Some website
 
         nav.nav
-          a.nav-link(href="#!/", ng-show="lang == 'ru'") Админка
-          a.nav-link(href="#!/", ng-show="lang == 'en'") Admin
+          a.nav-link(href="#!/admin", ng-show="lang == 'ru'") Админка
           a.nav-link(href="#!/", ng-click="lang='ru'", ng-hide="lang == 'ru'") Русский
           b.nav-link(ng-show="lang == 'ru'") Русский
           a.nav-link(href="#!/", ng-click="lang='en'", ng-hide="lang == 'en'") English
