@@ -2,6 +2,7 @@ cruder = require "cruder"
 
 
 module.exports = (container, callback) ->
+  translateApi = container.get "translate api"
   connection = container.get "connection"
   mongoose = container.get "mongoose"
   app = container.get "app"
@@ -31,8 +32,17 @@ module.exports = (container, callback) ->
 
       page.content = req.body.content
 
-      page.save (err) ->
+      page.save (err, page) ->
         return res.send 500 if err
-        res.send 200
+
+        translateApi.translate page.content, "ru", "en", (err, result) ->
+          return res.send 500 if err
+          res.send 200
+
+  translateApi.on "translation", (res) ->
+    Page.findOne language: "en", (err, page) ->
+      return if err
+      page.content = res.content.translation
+      page.save()
 
   callback()

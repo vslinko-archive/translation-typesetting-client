@@ -16,7 +16,7 @@
   , "url": "git://github.com/vyacheslav/translation-typesetting-client.git"
   }
 , "scripts": {
-    "start": "coffee index.coffee"
+    "start": "npm install && coffee index.coffee"
   , "test": "grunt"
   }
 , "dependencies": {
@@ -28,6 +28,8 @@
   , "symfio-contrib-mongoose": "~0.1"
   , "symfio-contrib-fixtures": "~0.1"
   , "cruder": "~0.1"
+  , "nconf": "~0.6"
+  , "superagent": "~0.14"
   }
 , "devDependencies": {
     "symfio-suite": "~1.0"
