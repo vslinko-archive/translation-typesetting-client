@@ -1,2 +1,4 @@
 h1.title(ng-show="lang == 'ru'") Главная страница
 h1.title(ng-show="lang == 'en'") Main page
+
+p(ng-bind-html="pages[lang] | nl2br")
